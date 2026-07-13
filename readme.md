@@ -1,6 +1,6 @@
 # Fine-tuning HuBERT Base on Nepali Folk Songs
 
-This repository contains a fine-tuned HuBERT-base model with 98M parameters, trained on a custom Nepali folk song dataset with a total duration of 29.4 hours.
+This repository contains a HuBERT-base model with 98M parameters,with continued pretraining on a custom Nepali folk song dataset with a total duration of 29.4 hours.
 
 ## Overview
 
@@ -25,7 +25,7 @@ This repository contains a fine-tuned HuBERT-base model with 98M parameters, tra
 
 ## Training Approach
 
-The model was fine-tuned in two stages, following the original HuBERT methodology:
+The model was trained in two stages, following the original HuBERT methodology:
 
 ### Stage 1
 - Feature representation: MFCC
@@ -72,7 +72,7 @@ To evaluate the usefulness of the learned representations, downstream genre clas
 | Original HuBERT | 0.78 | 0.77 | Baseline performance |
 | Stage 2 HuBERT | 0.90 | 0.90 | Better performance after fine-tuning |
 
-The Stage 2 HuBERT model clearly outperformed the original HuBERT model in genre classification, indicating that the fine-tuning process improved the quality of the learned representations for downstream musical genre recognition.
+The Stage 2 HuBERT model clearly outperformed the original HuBERT model in genre classification, indicating that the continued pretraining process improved the quality of the learned representations for downstream musical genre recognition.
 <!-- 
 ### Result Files
 
